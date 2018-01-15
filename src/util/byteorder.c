@@ -36,7 +36,7 @@
  */
 
 
-static char *RCSSTRING __UNUSED__ ="$Id: byteorder.c,v 1.2 2007/06/26 22:37:55 adamcain Exp $";
+static char *RCSSTRING  ="$Id: byteorder.c,v 1.2 2007/06/26 22:37:55 adamcain Exp $";
 
 #include "nr_common.h"
 #ifndef WIN32

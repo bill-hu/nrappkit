@@ -80,7 +80,7 @@
  */
 
 
-static char *RCSSTRING __UNUSED__ =(char *)"$Id: r_data.c,v 1.2 2006/08/16 19:39:17 adamcain Exp $";
+static char *RCSSTRING  =(char *)"$Id: r_data.c,v 1.2 2006/08/16 19:39:17 adamcain Exp $";
 
 #include <string.h>
 #include <r_common.h>

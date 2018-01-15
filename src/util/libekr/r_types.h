@@ -92,6 +92,9 @@
 #include <stdint.h>
 #endif
 
+#define R_DEFINED_INT8 //win32
+#define R_DEFINED_UINT8
+
 #ifndef R_DEFINED_INT2
 #ifndef SIZEOF_INT
 typedef short INT2;

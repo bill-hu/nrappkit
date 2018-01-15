@@ -470,36 +470,36 @@ nr_reg_alloc_node_data(char *name, nr_registry_node *node, int *freeit)
     case NR_REG_TYPE_CHAR:
       i = ((nr_scalar_registry_node*)node)->scalar._char;
       if (isprint(i) && ! isspace(i))
-          snprintf(s, len, "%c", (char)i);
+          _snprintf(s, len, "%c", (char)i);
       else
-          snprintf(s, len, "\\%03o", (char)i);
+          _snprintf(s, len, "\\%03o", (char)i);
       break;
     case NR_REG_TYPE_UCHAR:
-      snprintf(s, len, "0x%02x", ((nr_scalar_registry_node*)node)->scalar._uchar);
+      _snprintf(s, len, "0x%02x", ((nr_scalar_registry_node*)node)->scalar._uchar);
       break;
     case NR_REG_TYPE_INT2:
-      snprintf(s, len, "%d", ((nr_scalar_registry_node*)node)->scalar._nr_int2);
+      _snprintf(s, len, "%d", ((nr_scalar_registry_node*)node)->scalar._nr_int2);
       break;
     case NR_REG_TYPE_UINT2:
-      snprintf(s, len, "%u", ((nr_scalar_registry_node*)node)->scalar._nr_uint2);
+      _snprintf(s, len, "%u", ((nr_scalar_registry_node*)node)->scalar._nr_uint2);
       break;
     case NR_REG_TYPE_INT4:
-      snprintf(s, len, "%d", ((nr_scalar_registry_node*)node)->scalar._nr_int4);
+      _snprintf(s, len, "%d", ((nr_scalar_registry_node*)node)->scalar._nr_int4);
       break;
     case NR_REG_TYPE_UINT4:
-      snprintf(s, len, "%u", ((nr_scalar_registry_node*)node)->scalar._nr_uint4);
+      _snprintf(s, len, "%u", ((nr_scalar_registry_node*)node)->scalar._nr_uint4);
       break;
     case NR_REG_TYPE_INT8:
-      snprintf(s, len, "%lld", ((nr_scalar_registry_node*)node)->scalar._nr_int8);
+      _snprintf(s, len, "%lld", ((nr_scalar_registry_node*)node)->scalar._nr_int8);
       break;
     case NR_REG_TYPE_UINT8:
-      snprintf(s, len, "%llu", ((nr_scalar_registry_node*)node)->scalar._nr_uint8);
+      _snprintf(s, len, "%llu", ((nr_scalar_registry_node*)node)->scalar._nr_uint8);
       break;
     case NR_REG_TYPE_DOUBLE:
-      snprintf(s, len, "%#f", ((nr_scalar_registry_node*)node)->scalar._double);
+      _snprintf(s, len, "%#f", ((nr_scalar_registry_node*)node)->scalar._double);
       break;
     case NR_REG_TYPE_REGISTRY:
-      snprintf(s, len, "%s", name);
+      _snprintf(s, len, "%s", name);
       break;
     case NR_REG_TYPE_BYTES:
       for (i = 0; i < ((nr_array_registry_node*)node)->array.length; ++i) {

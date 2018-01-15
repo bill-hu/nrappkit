@@ -37,7 +37,7 @@
  */
 
 
-static char *RCSSTRING __UNUSED__ ="$Id: r_log.c,v 1.11 2013/03/02 05:52:23 adamroach Exp $";
+static char *RCSSTRING  ="$Id: r_log.c,v 1.11 2013/03/02 05:52:23 adamroach Exp $";
 
 
 #ifdef LINUX
@@ -190,14 +190,14 @@ int r_log_register(char *facility_name,int *log_facility)
 
       if(NR_reg_initted()){
 
-        if(snprintf(dest_prefix,sizeof(NR_registry),
+        if(_snprintf(dest_prefix,sizeof(NR_registry),
           "logging.%s.facility",log_destinations[j].dest_name)>=sizeof(NR_registry))
           ABORT(R_INTERNAL);
 
         if (r=NR_reg_make_registry(dest_prefix,facility_name,dest_facility_prefix))
           ABORT(r);
 
-        if(snprintf(log_types[i].dest_facility_key[j],sizeof(NR_registry),
+        if(_snprintf(log_types[i].dest_facility_key[j],sizeof(NR_registry),
           "%s.level",dest_facility_prefix)>=sizeof(NR_registry))
           ABORT(R_INTERNAL);
 
@@ -340,7 +340,7 @@ int r_vlog(int facility,int level,const char *format,va_list ap)
       if(facility >= 0 && facility < log_type_ct)
         facility_str=log_types[facility].facility_name;
 
-      snprintf(log_fmt_buf, MAX_ERROR_STRING_SIZE, "(%s/%s) %s",
+      _snprintf(log_fmt_buf, MAX_ERROR_STRING_SIZE, "(%s/%s) %s",
         facility_str,level_str,format);
 
       log_fmt_buf[MAX_ERROR_STRING_SIZE-1]=0;
@@ -409,7 +409,7 @@ int r_vlog_e(int facility,int level,const char *format,va_list ap)
 
       strncpy(log_fmt_buf, format, formatlen);
       strcpy(&log_fmt_buf[formatlen], ": ");
-      snprintf(&log_fmt_buf[formatlen+2], MAX_ERROR_STRING_SIZE - formatlen - 2, "%s",
+      _snprintf(&log_fmt_buf[formatlen+2], MAX_ERROR_STRING_SIZE - formatlen - 2, "%s",
 #ifdef WIN32
                strerror(WSAGetLastError()));
 #else
@@ -443,7 +443,7 @@ int r_vlog_nr(int facility,int level,int r,const char *format,va_list ap)
         return(1);
       strncpy(log_fmt_buf, format, formatlen);
       strcpy(&log_fmt_buf[formatlen], ": ");
-      snprintf(&log_fmt_buf[formatlen+2], MAX_ERROR_STRING_SIZE - formatlen - 2, "%s",
+      _snprintf(&log_fmt_buf[formatlen+2], MAX_ERROR_STRING_SIZE - formatlen - 2, "%s",
                nr_strerror(r));
 
       log_fmt_buf[MAX_ERROR_STRING_SIZE-1]=0;
@@ -546,7 +546,7 @@ static int r_log_get_destinations(int usereg)
       /* Get the data out of the registry */
       for(i=0; i<LOG_NUM_DESTINATIONS; i++){
         /* set callback for default level */
-        if(snprintf(reg_key,sizeof(reg_key),"%s.%s.level",LOGGING_REG_PREFIX,
+        if(_snprintf(reg_key,sizeof(reg_key),"%s.%s.level",LOGGING_REG_PREFIX,
           log_destinations[i].dest_name)>=sizeof(reg_key))
           ABORT(R_INTERNAL);
 
@@ -564,7 +564,7 @@ static int r_log_get_destinations(int usereg)
           log_destinations[i].default_level=value;
 
         /* set callback for the enabled key for this logging dest */
-        if(snprintf(reg_key,sizeof(reg_key),"%s.%s.enabled",LOGGING_REG_PREFIX,
+        if(_snprintf(reg_key,sizeof(reg_key),"%s.%s.enabled",LOGGING_REG_PREFIX,
           log_destinations[i].dest_name)>=sizeof(reg_key))
           ABORT(R_INTERNAL);
 

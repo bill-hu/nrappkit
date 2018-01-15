@@ -46,7 +46,7 @@
 */
 
 
-static char *RCSSTRING __UNUSED__ ="$Id: async_timer.c,v 1.7 2008/11/25 22:24:44 adamcain Exp $";
+static char *RCSSTRING  ="$Id: async_timer.c,v 1.7 2008/11/25 22:24:44 adamcain Exp $";
 
 #include <sys/queue.h>
 #include <sys/types.h>

@@ -281,7 +281,7 @@ nr_c2ru_set_children(NR_registry parent, char *child, void *ptr, int (*set)(NR_r
   i = 0;
   TAILQ_FOREACH(entry, tailq, entries) {
     if (label == 0 || (r=label(registry, entry, buffer))) {
-      snprintf(buffer, sizeof(buffer), "%d", i);
+      _snprintf(buffer, sizeof(buffer), "%d", i);
     }
     if ((r=nr_c2ru_make_registry(registry, buffer, name)))
       ABORT(r);

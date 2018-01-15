@@ -37,7 +37,7 @@
  */
 
 
-static char *RCSSTRING __UNUSED__ ="$Id: util.c,v 1.6 2013/03/02 05:52:23 adamroach Exp $";
+static char *RCSSTRING  ="$Id: util.c,v 1.6 2013/03/02 05:52:23 adamroach Exp $";
 
 #ifndef WIN32
 #include <sys/uio.h>
@@ -596,7 +596,7 @@ inet_ntop4(const unsigned char *src, char *dst, size_t size)
   char tmp[sizeof "255.255.255.255"];
   int l;
 
-  l = snprintf(tmp, sizeof(tmp), "%u.%u.%u.%u",
+  l = _snprintf(tmp, sizeof(tmp), "%u.%u.%u.%u",
       src[0], src[1], src[2], src[3]);
   if (l <= 0 || (size_t) l >= size) {
     errno = ENOSPC;
@@ -692,7 +692,7 @@ inet_ntop6(const unsigned char *src, char *dst, size_t size)
       tp += strlen(tp);
       break;
     }
-    advance = snprintf(tp, (size_t)(ep - tp), "%x", words[i]);
+    advance = _snprintf(tp, (size_t)(ep - tp), "%x", words[i]);
     if (advance <= 0 || advance >= ep - tp)
       return (NULL);
     tp += advance;

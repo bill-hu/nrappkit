@@ -588,7 +588,7 @@ NR_reg_make_registry(NR_registry parent, char *child, NR_registry out)
 
     for (i = 0; i < clen; ++i, ++c) {
         *c = child[i];
-        if (isspace(*c) || *c == '.' || *c == '/' || ! isprint(*c))
+        if (/*isspace(*c)*/ *c = 0x20  || *c == '.' || *c == '/' /*|| ! isprint(*c)*/)
             *c = '_';
     }
     if (i == 0 || child[i-1] == '.')

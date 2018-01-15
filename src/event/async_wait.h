@@ -41,7 +41,7 @@
 #define _async_wait_h
 
 #ifdef HAVE_SYS_TIME_H
-#include <sys/time.h>
+#include <time.h>
 #endif
 #include <csi_platform.h>
 

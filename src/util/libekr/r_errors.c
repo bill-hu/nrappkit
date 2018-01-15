@@ -81,7 +81,7 @@
  */
 
 
-static char *RCSSTRING __UNUSED__ ="$Id: r_errors.c,v 1.5 2008/11/26 03:22:02 adamcain Exp $";
+static char *RCSSTRING  ="$Id: r_errors.c,v 1.5 2008/11/26 03:22:02 adamcain Exp $";
 
 #include <stdio.h>
 #include <stdarg.h>
@@ -122,7 +122,7 @@ nr_strerror(int errnum)
     }
 
     if (! error) {
-        snprintf(unknown_error, sizeof(unknown_error), "Unknown error: %d", errnum);
+        _snprintf(unknown_error, sizeof(unknown_error), "Unknown error: %d", errnum);
         error = unknown_error;
     }
 
@@ -133,7 +133,7 @@ int
 nr_strerror_r(int errnum, char *strerrbuf, size_t buflen)
 {
     char *error = nr_strerror(errnum);
-    snprintf(strerrbuf, buflen, "%s", error);
+    _snprintf(strerrbuf, buflen, "%s", error);
     return 0;
 }
 

@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2F1DD5FF-B93D-34F0-8047-56A94A7B6429}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nrappkit</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\hubin\webrtc\nrappkit\build\nrappkit\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nrappkit.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">libnrappkit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\hubin\webrtc\nrappkit\build\nrappkit\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nrappkit.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">libnrappkit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.a</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\hubin\webrtc\nrappkit\build\nrappkit\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nrappkit.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">libnrappkit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.a</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\hubin\webrtc\nrappkit\build\nrappkit\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nrappkit.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">libnrappkit</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.a</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g -fPIC %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\win32\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>__UNUSED__;WIN32;_WINDOWS;_DEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g -fPIC -Wno-parentheses -Wno-strict-prototypes -Wmissing-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g -fPIC -Wno-parentheses -Wno-strict-prototypes -Wmissing-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g -fPIC -Wno-parentheses -Wno-strict-prototypes -Wmissing-prototypes %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NO_REG_RPC=1;HAVE_VFPRINTF=1;RETSIGTYPE=void;NEW_STDIO;HAVE_STRDUP=1;HAVE_STRLCPY=1;HAVE_LIBM=1;HAVE_SYS_TIME_H=1;TIME_WITH_SYS_TIME_H=1;LINUX;__UNUSED__=__attribute__((unused));CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\hubin\webrtc\nrappkit\src\event;D:\hubin\webrtc\nrappkit\src\log;D:\hubin\webrtc\nrappkit\src\port\generic\include;D:\hubin\webrtc\nrappkit\src\registry;D:\hubin\webrtc\nrappkit\src\share;D:\hubin\webrtc\nrappkit\src\plugin;D:\hubin\webrtc\nrappkit\src\stats;D:\hubin\webrtc\nrappkit\src\util;D:\hubin\webrtc\nrappkit\src\util\libekr;D:\hubin\webrtc\nrappkit\src\port\linux\include;D:\hubin\webrtc\nrappkit\src\port;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/hubin/webrtc/nrappkit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+D:\tools\CMake\bin\cmake.exe -HD:/hubin/webrtc/nrappkit -BD:/hubin/webrtc/nrappkit/build --check-stamp-file D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:/hubin/webrtc/nrappkit/CMakeLists.txt;D:\hubin\webrtc\nrappkit\CMakeLists.txt;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCCompiler.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\hubin\webrtc\nrappkit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/hubin/webrtc/nrappkit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+D:\tools\CMake\bin\cmake.exe -HD:/hubin/webrtc/nrappkit -BD:/hubin/webrtc/nrappkit/build --check-stamp-file D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:/hubin/webrtc/nrappkit/CMakeLists.txt;D:\hubin\webrtc\nrappkit\CMakeLists.txt;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCCompiler.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\hubin\webrtc\nrappkit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/hubin/webrtc/nrappkit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+D:\tools\CMake\bin\cmake.exe -HD:/hubin/webrtc/nrappkit -BD:/hubin/webrtc/nrappkit/build --check-stamp-file D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:/hubin/webrtc/nrappkit/CMakeLists.txt;D:\hubin\webrtc\nrappkit\CMakeLists.txt;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCCompiler.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\hubin\webrtc\nrappkit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/hubin/webrtc/nrappkit/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+D:\tools\CMake\bin\cmake.exe -HD:/hubin/webrtc/nrappkit -BD:/hubin/webrtc/nrappkit/build --check-stamp-file D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:/hubin/webrtc/nrappkit/CMakeLists.txt;D:\hubin\webrtc\nrappkit\CMakeLists.txt;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCCompiler.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeCXXCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\hubin\webrtc\nrappkit\build\CMakeFiles\3.6.2\CMakeRCCompiler.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;D:\tools\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;D:\tools\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;D:\hubin\webrtc\nrappkit\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\hubin\webrtc\nrappkit\build\CMakeFiles\generate.stamp</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\share\nr_common.h" />
+    <ClInclude Include="..\src\share\nr_reg_keys.h" />
+    <ClInclude Include="..\src\util\libekr\assoc.h" />
+    <ClInclude Include="..\src\util\libekr\debug.h" />
+    <ClInclude Include="..\src\util\libekr\r_assoc.h" />
+    <ClInclude Include="..\src\util\libekr\r_common.h" />
+    <ClInclude Include="..\src\util\libekr\r_crc32.h" />
+    <ClInclude Include="..\src\util\libekr\r_data.h" />
+    <ClInclude Include="..\src\util\libekr\r_defaults.h" />
+    <ClInclude Include="..\src\util\libekr\r_errors.h" />
+    <ClInclude Include="..\src\util\libekr\r_includes.h" />
+    <ClInclude Include="..\src\util\libekr\r_list.h" />
+    <ClInclude Include="..\src\util\libekr\r_macros.h" />
+    <ClInclude Include="..\src\util\libekr\r_memory.h" />
+    <ClInclude Include="..\src\util\libekr\r_thread.h" />
+    <ClInclude Include="..\src\util\libekr\r_time.h" />
+    <ClInclude Include="..\src\util\libekr\r_types.h" />
+    <ClInclude Include="..\src\util\byteorder.h" />
+    <ClInclude Include="..\src\util\hex.h" />
+    <ClInclude Include="..\src\util\p_buf.h" />
+    <ClInclude Include="..\src\util\util.h" />
+    <ClInclude Include="..\src\event\async_timer.h" />
+    <ClInclude Include="..\src\event\async_wait.h" />
+    <ClInclude Include="..\src\event\async_wait_int.h" />
+    <ClInclude Include="..\src\log\r_log.h" />
+    <ClInclude Include="..\src\registry\c2ru.h" />
+    <ClInclude Include="..\src\registry\registry.h" />
+    <ClInclude Include="..\src\registry\registry_int.h" />
+    <ClInclude Include="..\src\registry\registry_vtbl.h" />
+    <ClInclude Include="..\src\port\linux\include\csi_platform.h" />
+    <ClCompile Include="..\src\util\libekr\r_assoc.c" />
+    <ClCompile Include="..\src\util\libekr\r_crc32.c" />
+    <ClCompile Include="..\src\util\libekr\r_data.c" />
+    <ClCompile Include="..\src\util\libekr\r_errors.c" />
+    <ClCompile Include="..\src\util\libekr\r_list.c" />
+    <ClCompile Include="..\src\util\libekr\r_memory.c" />
+    <ClCompile Include="..\src\util\libekr\r_time.c" />
+    <ClCompile Include="..\src\util\libekr\debug.c" />
+    <ClCompile Include="..\src\util\byteorder.c" />
+    <ClCompile Include="..\src\util\hex.c" />
+    <ClCompile Include="..\src\util\p_buf.c" />
+    <ClCompile Include="..\src\util\util.c" />
+    <ClCompile Include="..\src\log\r_log.c" />
+    <ClCompile Include="..\src\event\async_timer.c" />
+    <ClCompile Include="..\src\event\async_wait.c" />
+    <ClCompile Include="..\src\registry\c2ru.c" />
+    <ClCompile Include="..\src\registry\registry.c" />
+    <ClCompile Include="..\src\registry\registry_local.c" />
+    <ClCompile Include="..\src\registry\registrycb.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/hubin/webrtc/nrappkit/build/ZERO_CHECK.vcxproj">
+      <Project>1B339A0A-3C0D-3854-9139-BE2DA33FEAD9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
