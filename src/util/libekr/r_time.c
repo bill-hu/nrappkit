@@ -81,7 +81,11 @@
 
 
 static char *RCSSTRING  ="$Id: r_time.c,v 1.5 2008/11/26 03:22:02 adamcain Exp $";
-#include <WinSock.h>
+#define UINT8 UBLAH_IGNORE_ME_PLEASE
+#define INT8 BLAH_IGNORE_ME_PLEASE
+#include <winsock2.h>
+#undef UINT8
+#undef INT8
 #include <r_common.h>
 #include <r_time.h>
 

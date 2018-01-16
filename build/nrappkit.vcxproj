@@ -259,6 +259,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\port\win32\include\csi_platform.h" />
     <ClInclude Include="..\src\share\nr_common.h" />
     <ClInclude Include="..\src\share\nr_reg_keys.h" />
     <ClInclude Include="..\src\util\libekr\assoc.h" />
@@ -288,7 +289,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="..\src\registry\registry.h" />
     <ClInclude Include="..\src\registry\registry_int.h" />
     <ClInclude Include="..\src\registry\registry_vtbl.h" />
-    <ClInclude Include="..\src\port\linux\include\csi_platform.h" />
     <ClCompile Include="..\src\util\libekr\r_assoc.c" />
     <ClCompile Include="..\src\util\libekr\r_crc32.c" />
     <ClCompile Include="..\src\util\libekr\r_data.c" />
